@@ -1,15 +1,28 @@
+// const cursor = document.querySelector(".cursor");
+// document.addEventListener("mousemove",function(e){
+//     //console.log(e);
+//     cursor.style.left = e.x+"px";
+//     cursor.style.top = e.y+"px";
+// });
+// const cursorBlur = document.querySelector(".cursor-blur");
+// document.addEventListener("mousemove",function(e){
+//     //console.log(e);
+//     cursorBlur.style.left = e.x - 65 +"px";
+//     cursorBlur.style.top = e.y -65 +"px";
+// });
+
+
 const cursor = document.querySelector(".cursor");
-document.addEventListener("mousemove",function(e){
-    //console.log(e);
-    cursor.style.left = e.x+"px";
-    cursor.style.top = e.y+"px";
-});
 const cursorBlur = document.querySelector(".cursor-blur");
-document.addEventListener("mousemove",function(e){
-    //console.log(e);
-    cursorBlur.style.left = e.x - 65 +"px";
-    cursorBlur.style.top = e.y -65 +"px";
+
+document.addEventListener("mousemove", function(e) {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+    cursorBlur.style.left = e.clientX - 65 + "px";
+    cursorBlur.style.top = e.clientY - 65 + "px";
 });
+
+
 
 // const boxes = document.querySelectorAll('.box');
 
